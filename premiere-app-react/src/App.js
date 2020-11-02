@@ -2,7 +2,7 @@ import logo from './logo.svg';
 import React from 'react';
 import './App.css';
 import {List} from './Components/list.js';
-import {Button} from './Components/list.js';
+import {Button} from './Components/Button.js';
 
 function App() {
   const initlist = <List/>;
