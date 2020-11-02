@@ -9,3 +9,9 @@ export class List extends React.Component {
         </ul>
     }
 }
+
+export class Button extends React.Component {   
+    render () {
+        return <button type="button">Click !</button>
+    }
+}
