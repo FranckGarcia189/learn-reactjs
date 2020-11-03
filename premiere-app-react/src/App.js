@@ -6,7 +6,7 @@ import './App.css';
 import {Button, List, Formulaire } from './Components';
 
 function App() {
-  const Formulaire1 = <Formulaire type="text" name="UserInput" placeholder="Votre texte ici..." disabled={false}/>;
+  const Formulaire1 = <Formulaire type="text" name="UserInput" placeholder="Votre texte ici..." value="" disabled={false}/>;
   return (
     <div className="divApp">
       <h2>Ma premiere app React</h2>
