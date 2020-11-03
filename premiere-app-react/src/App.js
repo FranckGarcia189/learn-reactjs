@@ -7,11 +7,11 @@ import {Button, List } from './Components';
 
 function App() {
   const initlist = <List/>;
-  const MyButton = <Button value="Click on me !"/>;
+  const MyButton = <Button/>;
   return (
-    <div class="divApp">
+    <div className="divApp">
       <h2>Ma premiere app React</h2>
-      <div class="divAppColor">
+      <div className="divAppColor">
         { initlist }
         <br/>
         { MyButton }
