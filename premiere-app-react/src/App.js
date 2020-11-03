@@ -3,18 +3,15 @@ import React from 'react';
 import './App.css';
 // import {List} from './Components/list.js';
 // import {Button} from './Components/Button.js';
-import {Button, List } from './Components';
+import {Button, List, Formulaire } from './Components';
 
 function App() {
-  const initlist = <List/>;
-  const MyButton = <Button/>;
+  const Formulaire1 = <Formulaire type="text" name="UserInput" placeholder="Votre texte ici..." disabled={false}/>;
   return (
     <div className="divApp">
       <h2>Ma premiere app React</h2>
       <div className="divAppColor">
-        { initlist }
-        <br/>
-        { MyButton }
+        { Formulaire1 }
       </div>      
     </div>
   );
