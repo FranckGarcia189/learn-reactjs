@@ -36,3 +36,14 @@
     transform: rotate(360deg);
   }
 }
+
+.divApp {
+  margin:20px;
+}
+
+.divAppColor {
+  background-color: rgb(220,220,220);
+  border:none;
+  border-radius: 5px;
+  padding:20px;
+}

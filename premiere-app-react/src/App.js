@@ -6,12 +6,15 @@ import {Button} from './Components/Button.js';
 
 function App() {
   const initlist = <List/>;
-  const MyButton = <Button/>
+  const MyButton = <Button value="Click on me !"/>;
   return (
-    <div>
-      { initlist }
-      <br/>
-      { MyButton}
+    <div class="divApp">
+      <h2>Ma premiere app React</h2>
+      <div class="divAppColor">
+        { initlist }
+        <br/>
+        { MyButton }
+      </div>      
     </div>
   );
 }
