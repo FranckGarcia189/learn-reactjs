@@ -7,7 +7,7 @@ export class Formulaire extends React.Component {
         super(props)
         this.state = {
             UserText : "",
-            toDoList : ["tache1", "tache2"],
+            toDoList : [],
             disabled : true
         }   
     }
@@ -34,9 +34,18 @@ export class Formulaire extends React.Component {
         })
         e.preventDefault()    
     }
+    removeToDoList(e){
+        const delToDo = e.target.id;
+        const currentToDoList = this.state.toDoList.slice(); 
+        const IndexToRemove = currentToDoList.indexOf(delToDo);
+        currentToDoList.splice(IndexToRemove,1);
+        this.setState({
+            toDoList : currentToDoList
+        })     
+    }
     render () {
-        const MyButton = <Button type="submit" value="Click to alert !" isDisabled={this.state.disabled}/>;
-        const MyToDoList = <List MyList={this.state.toDoList}/>;      
+        const MyButton = <Button type="submit" value="Click to add !" isDisabled={this.state.disabled}/>;
+        const MyToDoList = <List MyList={this.state.toDoList} delFunction={(e)=>this.removeToDoList(e)}/>;      
         return (       
             <div>
                 <div>

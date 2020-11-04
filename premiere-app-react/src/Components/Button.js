@@ -3,9 +3,6 @@ import React from 'react';
 export class Button extends React.Component {  
     constructor (props) {
         super(props)
-        // this.state = {
-        //     disabled : true
-        // }
     } 
     // ChangeButtonValue(){
     //     const NewValue = "Ca marche !"
@@ -15,6 +12,11 @@ export class Button extends React.Component {
     // }
     render () {
         const {isDisabled} = this.props
-        return (<button type={this.props.type} disabled={isDisabled}>{this.props.value}</button>)
+        const {delFunction} = this.props
+        const {id} = this.props;
+        // const {id} = this.props
+        return (
+            <button type={this.props.type} disabled={isDisabled} id={id} onClick={delFunction}>{this.props.value}</button>
+        )
     }
 }
