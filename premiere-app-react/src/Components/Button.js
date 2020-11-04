@@ -4,7 +4,7 @@ export class Button extends React.Component {
     constructor (props) {
         super(props)
         // this.state = {
-        //     value : "Click on me!"
+        //     disabled : true
         // }
     } 
     // ChangeButtonValue(){
@@ -14,6 +14,7 @@ export class Button extends React.Component {
     //     })
     // }
     render () {
-        return (<button type={this.props.type}>{this.props.value}</button>)
+        const {isDisabled} = this.props
+        return (<button type={this.props.type} disabled={isDisabled}>{this.props.value}</button>)
     }
 }

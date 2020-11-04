@@ -3,10 +3,10 @@ import React from 'react';
 import './App.css';
 // import {List} from './Components/list.js';
 // import {Button} from './Components/Button.js';
-import {Button, List, Formulaire } from './Components';
+import {Formulaire } from './Components';
 
 function App() {
-  const Formulaire1 = <Formulaire type="text" name="UserInput" placeholder="Votre texte ici..." value="" disabled={false}/>;
+  const Formulaire1 = <Formulaire type="text" name="UserInput" placeholder="Votre texte ici..." value="" />;
   return (
     <div className="divApp">
       <h2>Ma premiere app React</h2>
@@ -16,6 +16,5 @@ function App() {
     </div>
   );
 }
-
 
 export default App;
